@@ -1,0 +1,312 @@
+2020-12-02 14:52:57.012 INFO  (main) [   ] o.e.j.u.log Logging initialized @1054ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-12-02 14:52:57.065 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
+    <New id="threadpool" class="com.codahale.metrics.jetty9.InstrumentedQueuedThreadPool"><Arg name="registry">
+        <Call id="solrJettyMetricRegistry" name="getOrCreate" class="com.codahale.metrics.SharedMetricRegistries"><Arg>solr.jetty</Arg></Call>
+      </Arg></New>
+  </Arg>
+2020-12-02 14:52:57.165 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 14.0.1+7
+2020-12-02 14:52:57.180 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/contexts/] at interval 0
+2020-12-02 14:52:57.455 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-12-02 14:52:57.464 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-12-02 14:52:57.464 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-12-02 14:52:57.467 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-12-02 14:52:57.527 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-12-02 14:52:57.531 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.7.0
+2020-12-02 14:52:57.532 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-12-02 14:52:57.532 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/yjwsis/Desktop/searchEngine/solr-8.7.0
+2020-12-02 14:52:57.532 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-12-02T14:52:57.532187Z
+2020-12-02 14:52:57.543 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr
+2020-12-02 14:52:57.547 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/solr.xml
+2020-12-02 14:52:57.632 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1cf6d1be, but no JMX reporters were configured - adding default JMX reporter.
+2020-12-02 14:52:58.041 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-12-02 14:52:58.213 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@14dc3f89[provider=null,keyStore=null,trustStore=null]
+2020-12-02 14:52:58.213 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@14dc3f89[provider=null,keyStore=null,trustStore=null]
+2020-12-02 14:52:58.333 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2bebb74f[provider=null,keyStore=null,trustStore=null]
+2020-12-02 14:52:58.333 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2bebb74f[provider=null,keyStore=null,trustStore=null]
+2020-12-02 14:52:58.386 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-12-02 14:52:58.520 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-12-02 14:52:58.523 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-12-02 14:52:58.595 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1cf6d1be
+2020-12-02 14:52:58.596 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1cf6d1be
+2020-12-02 14:52:58.600 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1cf6d1be
+2020-12-02 14:52:58.648 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr
+2020-12-02 14:52:58.648 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [board, sqlBoard, db]
+2020-12-02 14:52:58.691 INFO  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2020-12-02 14:52:58.691 INFO  (coreLoadExecutor-13-thread-2) [   x:sqlBoard] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2020-12-02 14:52:58.692 WARN  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.c.SolrConfig Couldn't add files from /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/_LIB filtered by .*\.jar to classpath: java.nio.file.NoSuchFileException: /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/_LIB
+2020-12-02 14:52:58.695 INFO  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.c.SolrResourceLoader Added 60 libs to classloader, from paths: [/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/contrib/extraction/lib, /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/contrib/langid/lib, /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/contrib/velocity/lib, /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/dist, /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/db/lib]
+2020-12-02 14:52:58.705 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@6d304f9d{/solr,file:///Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr-webapp/webapp/,AVAILABLE}{/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr-webapp/webapp}
+2020-12-02 14:52:58.714 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@76012793{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2020-12-02 14:52:58.714 INFO  (main) [   ] o.e.j.s.Server Started @2759ms
+2020-12-02 14:52:58.858 INFO  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.s.IndexSchema Schema name=default-config
+2020-12-02 14:52:58.861 INFO  (coreLoadExecutor-13-thread-2) [   x:sqlBoard] o.a.s.s.IndexSchema Schema name=default-config
+2020-12-02 14:52:58.932 INFO  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.7.0
+2020-12-02 14:52:58.950 INFO  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-12-02 14:52:59.014 INFO  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.s.IndexSchema Schema name=example-DIH-db
+2020-12-02 14:52:59.181 WARN  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.D.s.LatLonType Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2020-12-02 14:52:59.308 WARN  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2020-12-02 14:52:59.308 WARN  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2020-12-02 14:52:59.308 WARN  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2020-12-02 14:52:59.309 WARN  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2020-12-02 14:52:59.309 WARN  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2020-12-02 14:52:59.450 INFO  (coreLoadExecutor-13-thread-2) [   x:sqlBoard] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-12-02 14:52:59.450 INFO  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-12-02 14:52:59.476 INFO  (coreLoadExecutor-13-thread-2) [   x:sqlBoard] o.a.s.c.CoreContainer Creating SolrCore 'sqlBoard' using configuration from instancedir /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/sqlBoard, trusted=true
+2020-12-02 14:52:59.477 INFO  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.c.CoreContainer Creating SolrCore 'board' using configuration from instancedir /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board, trusted=true
+2020-12-02 14:52:59.493 INFO  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.s.IndexSchema Loaded schema example-DIH-db/1.6 with uniqueid field id
+2020-12-02 14:52:59.506 INFO  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.board' (registry 'solr.core.board') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1cf6d1be
+2020-12-02 14:52:59.506 INFO  (coreLoadExecutor-13-thread-2) [   x:sqlBoard] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.sqlBoard' (registry 'solr.core.sqlBoard') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1cf6d1be
+2020-12-02 14:52:59.515 INFO  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.c.CoreContainer Creating SolrCore 'db' using configuration from instancedir /Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/db, trusted=true
+2020-12-02 14:52:59.516 INFO  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.db' (registry 'solr.core.db') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1cf6d1be
+2020-12-02 14:52:59.521 INFO  (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.c.SolrCore [[db] ] Opening new SolrCore at [/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/db], dataDir=[/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/db/data/]
+2020-12-02 14:52:59.521 INFO  (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.c.SolrCore [[board] ] Opening new SolrCore at [/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board], dataDir=[/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/]
+2020-12-02 14:52:59.521 INFO  (coreLoadExecutor-13-thread-2) [   x:sqlBoard] o.a.s.c.SolrCore [[sqlBoard] ] Opening new SolrCore at [/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/sqlBoard], dataDir=[/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/sqlBoard/data/]
+2020-12-02 14:52:59.545 ERROR (coreLoadExecutor-13-thread-3) [   x:db] o.a.s.c.SolrCore [db] Solr index directory '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/db/data/index/' is locked (lockType=native).  Throwing exception.
+2020-12-02 14:52:59.545 INFO  (coreLoadExecutor-13-thread-3) [   ] o.a.s.c.SolrCore [db]  CLOSING SolrCore org.apache.solr.core.SolrCore@35b356ec
+2020-12-02 14:52:59.545 INFO  (coreLoadExecutor-13-thread-3) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.db tag=SolrCore@35b356ec
+2020-12-02 14:52:59.546 ERROR (coreLoadExecutor-13-thread-1) [   x:board] o.a.s.c.SolrCore [board] Solr index directory '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' is locked (lockType=native).  Throwing exception.
+2020-12-02 14:52:59.546 INFO  (coreLoadExecutor-13-thread-1) [   ] o.a.s.c.SolrCore [board]  CLOSING SolrCore org.apache.solr.core.SolrCore@7877792b
+2020-12-02 14:52:59.546 INFO  (coreLoadExecutor-13-thread-3) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6f374344: rootName = null, domain = solr.core.db, service url = null, agent id = null] for registry solr.core.db/com.codahale.metrics.MetricRegistry@4b8c1722
+2020-12-02 14:52:59.546 ERROR (coreLoadExecutor-13-thread-2) [   x:sqlBoard] o.a.s.c.SolrCore [sqlBoard] Solr index directory '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/sqlBoard/data/index/' is locked (lockType=native).  Throwing exception.
+2020-12-02 14:52:59.546 INFO  (coreLoadExecutor-13-thread-2) [   ] o.a.s.c.SolrCore [sqlBoard]  CLOSING SolrCore org.apache.solr.core.SolrCore@39750499
+2020-12-02 14:52:59.548 INFO  (coreLoadExecutor-13-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.board tag=SolrCore@7877792b
+2020-12-02 14:52:59.548 INFO  (coreLoadExecutor-13-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@62556531: rootName = null, domain = solr.core.board, service url = null, agent id = null] for registry solr.core.board/com.codahale.metrics.MetricRegistry@2024d30f
+2020-12-02 14:52:59.549 INFO  (coreLoadExecutor-13-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.sqlBoard tag=SolrCore@39750499
+2020-12-02 14:52:59.549 INFO  (coreLoadExecutor-13-thread-2) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@76922e58: rootName = null, domain = solr.core.sqlBoard, service url = null, agent id = null] for registry solr.core.sqlBoard/com.codahale.metrics.MetricRegistry@5015c8fa
+2020-12-02 14:52:59.551 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [board]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [board]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$15(CoreContainer.java:881) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [board]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1420) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' of core 'board' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1082) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:919) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1399) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' of core 'board' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:795) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:999) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:919) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1399) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2020-12-02 14:52:59.551 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [sqlBoard]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [sqlBoard]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$15(CoreContainer.java:881) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [sqlBoard]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1420) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/sqlBoard/data/index/' of core 'sqlBoard' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1082) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:919) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1399) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/sqlBoard/data/index/' of core 'sqlBoard' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:795) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:999) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:919) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1399) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2020-12-02 14:52:59.551 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [db]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+java.util.concurrent.ExecutionException: org.apache.solr.common.SolrException: Unable to create core [db]
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:?]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$15(CoreContainer.java:881) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) ~[?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) ~[?:?]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [db]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1420) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.solr.common.SolrException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/db/data/index/' of core 'db' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1082) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:919) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1399) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/db/data/index/' of core 'db' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:795) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:999) ~[?:?]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:919) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1399) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2020-12-02 14:53:02.270 ERROR (qtp1869039062-26) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'board' is not available due to init failure: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' of core 'board' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1898)
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1871)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:258)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:310)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:264)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.common.SolrException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' of core 'board' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1082)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:919)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1399)
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	... 1 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' of core 'board' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:795)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:999)
+	... 9 more
+
+2020-12-02 14:53:02.310 ERROR (qtp1869039062-18) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'board' is not available due to init failure: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' of core 'board' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1898)
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1871)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:258)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:526)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:415)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:345)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1604)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.handle(CrossOriginFilter.java:310)
+	at org.eclipse.jetty.servlets.CrossOriginFilter.doFilter(CrossOriginFilter.java:264)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1610)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1300)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1580)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1215)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.apache.solr.common.SolrException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' of core 'board' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1082)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:919)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1399)
+	at org.apache.solr.core.CoreContainer.lambda$load$14(CoreContainer.java:852)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	... 1 more
+Caused by: org.apache.lucene.store.LockObtainFailedException: Index dir '/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr/board/data/index/' of core 'board' is already locked. The most likely cause is another Solr server (or another solr core in this server) also configured to use this directory; other possible causes may be specific to lockType: native
+	at org.apache.solr.core.SolrCore.initIndex(SolrCore.java:795)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:999)
+	... 9 more
+
+2020-12-02 14:53:13.442 INFO  (qtp1869039062-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1606920793356} status=0 QTime=4
+2020-12-02 14:53:13.449 INFO  (qtp1869039062-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1606920793356} status=0 QTime=11
+2020-12-02 14:53:18.288 INFO  (qtp1869039062-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1606920798246} status=0 QTime=0
+2020-12-02 14:53:18.293 INFO  (qtp1869039062-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1606920798247} status=0 QTime=4
+2020-12-02 14:53:18.304 INFO  (qtp1869039062-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1606920798247} status=0 QTime=4
+2020-12-02 14:53:23.050 INFO  (qtp1869039062-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1606920798246} status=0 QTime=0
+2020-12-02 14:53:23.050 INFO  (qtp1869039062-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1606920798246} status=0 QTime=0
+2020-12-02 14:53:23.053 INFO  (qtp1869039062-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1606920798247} status=0 QTime=3
+2020-12-02 16:21:22.953 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@76012793{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2020-12-02 16:21:22.954 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-12-02 16:21:22.965 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=369333979
+2020-12-02 16:21:22.968 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2020-12-02 16:21:22.968 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@100c8b75: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@277d64e6
+2020-12-02 16:21:22.973 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2020-12-02 16:21:22.973 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@b1534d3: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@2518b235
+2020-12-02 16:21:22.975 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2020-12-02 16:21:22.975 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3c74aa0d: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@458707ac
+2020-12-02 16:21:22.993 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@6d304f9d{/solr,null,UNAVAILABLE}{/Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/solr-webapp/webapp}

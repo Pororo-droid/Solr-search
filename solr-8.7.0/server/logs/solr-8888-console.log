@@ -1,0 +1,18 @@
+Java HotSpot(TM) 64-Bit Server VM warning: -XX:+UseLargePages not supported in this VM
+2020-12-16 12:27:32.995 INFO  (main) [   ] o.e.j.u.log Logging initialized @1073ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-12-16 12:27:33.043 WARN  (main) [   ] o.e.j.x.XmlConfiguration Ignored arg: <Arg name="threadpool">
+    <New id="threadpool" class="com.codahale.metrics.jetty9.InstrumentedQueuedThreadPool"><Arg name="registry">
+        <Call id="solrJettyMetricRegistry" name="getOrCreate" class="com.codahale.metrics.SharedMetricRegistries"><Arg>solr.jetty</Arg></Call>
+      </Arg></New>
+  </Arg>
+2020-12-16 12:27:33.153 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.27.v20200227; built: 2020-02-27T18:37:21.340Z; git: a304fd9f351f337e7c0e2a7c28878dd536149c6c; jvm 14.0.1+7
+2020-12-16 12:27:33.169 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/yjwsis/Desktop/searchEngine/solr-8.7.0/server/contexts/] at interval 0
+2020-12-16 12:27:33.474 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-12-16 12:27:33.482 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-12-16 12:27:33.482 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-12-16 12:27:33.485 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-12-16 12:27:33.546 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-12-16 12:27:33.550 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.7.0
+2020-12-16 12:27:33.550 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8888
+2020-12-16 12:27:33.551 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/yjwsis/Desktop/searchEngine/solr-8.7.0
+2020-12-16 12:27:33.551 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-12-16T12:27:33.551160Z
